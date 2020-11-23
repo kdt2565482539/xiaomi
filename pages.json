@@ -1,0 +1,60 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	    ,{
+            "path" : "pages/Search/Search",
+            "style" : {
+				"usingComponents":{
+					  "van-sidebar": "/wxcomponents/vant/sidebar/index",
+					  "van-sidebar-item": "/wxcomponents/vant/sidebar-item/index"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/ShoppingCart/ShoppingCart",
+            "style" : {
+				"navigationBarTitleText": "购物车"
+			}
+        }
+        ,{
+            "path" : "pages/user/user",
+            "style" : {
+				"usingComponents":{
+					"van-icon": "/wxcomponents/vant/icon/index"
+				}
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"list":[
+			{"pagePath":"pages/index/index",
+			"text":"首页",
+			"iconPath":"static/tabbar/index.png",
+			"selectedIconPath":"static/tabbar/indexSelected.png"
+			},
+			{"pagePath":"pages/Search/Search",
+			"text":"搜索",
+			"iconPath":"static/tabbar/class.png",
+			"selectedIconPath":"static/tabbar/classSelected.png"},
+			{"pagePath":"pages/ShoppingCart/ShoppingCart",
+			"text":"购物车",
+			"iconPath":"static/tabbar/cart.png",
+			"selectedIconPath":"static/tabbar/cartSelected.png"},
+			{"pagePath":"pages/user/user",
+			"text":"我的",
+			"iconPath":"static/tabbar/my.png",
+			"selectedIconPath":"static/tabbar/mySelected.png"}
+		]
+	}
+}
